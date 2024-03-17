@@ -3,13 +3,16 @@
 // Execute `rustlings hint variables2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 fn main() {
-    let x;
-    if x == 10 {
-        println!("x is ten!");
+    // Rust automatically doesn't recast
+    // For instance, the next type doesn't
+    // allow the comparison
+    // let x: u8 = 10;
+
+    let x: i32 = 512;
+    if x == 512 {
+        println!("x has a 512 value!");
     } else {
-        println!("x is not ten!");
+        println!("x has not a 512 value!");
     }
 }
